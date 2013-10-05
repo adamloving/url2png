@@ -30,7 +30,8 @@
   },
   "contributors": [
     { "name": "Pato Jutard", "email": "pato@mural.ly" },
-    { "name": "Johnny Halife", "email": "johnny@mural.ly" }
+    { "name": "Johnny Halife", "email": "johnny@mural.ly" },
+    { "name": "Adam Loving", "email": "adamloving@gmail.com" }
   ],
   "license": "BSD"
 }
