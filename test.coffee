@@ -11,11 +11,12 @@ describe 'Server Slide model', ->
     assert new Client('API_KEY', 'PRIVATE_KEY')
 
   it 'should generate URL given viewport, say_cheese, and unique parameters', ->
+
     client = new Client('API_KEY', 'PRIVATE_KEY',
       viewport: '1024x768'
       unique: 'something'
-      sayCheese: true
+      say_cheese: true
     )
 
-    console.log 'getApiUrl', client.getApiUrl('http://www.google.com')
+    console.log 'getApiUrl', client.getApiUrl('http://url2png.com/tests/say_cheese-wait-for-images/')
     assert client.getApiUrl('http://www.google.com')

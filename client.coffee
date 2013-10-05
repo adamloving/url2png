@@ -15,17 +15,20 @@ class exports.Client
     if @options.viewport && (typeof(@options.viewport) != 'string' || !@options.viewport.match(/\d+x\d+/)) 
         throw new Error("viewport should be a string with the format \"{width}x{height}\"")  
     
-    if @options.fullpage && typeof options.fullpage != 'boolean'
+    if @options.fullpage && typeof(@options.fullpage) != 'boolean'
         throw new Error('fullpage should be a boolean')
 
-    if @options.thumbnail_max_width && typeof @options.thumbnail_max_width != 'number'
+    if @options.thumbnail_max_width && typeof(@options.thumbnail_max_width) != 'number'
         throw new Error('thumbnail_max_width should be a number in pixels')  
 
-    if @options.delay && typeof(@options.delay != 'number')
+    if @options.delay && typeof(@options.delay) != 'number'
         throw new Error('delay should be a number in seconds')
 
-    if @options.force && typeof(@options.force != 'boolean')
+    if @options.force && typeof(@options.force) != 'boolean'
         throw new Error('force should be a boolean')  
+
+    if @options.say_cheese && typeof(@options.say_cheese) != 'boolean'
+        throw new Error('say_cheese should be a boolean, not ' + typeof(@options.say_cheese))  
 
   getApiUrl: (url) ->
     throw new Error('url required') unless url
