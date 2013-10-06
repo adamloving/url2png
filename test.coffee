@@ -12,7 +12,7 @@ describe 'Server Slide model', ->
 
   it 'should generate URL given viewport, say_cheese, and unique parameters', ->
 
-    client = new Client('API_KEY', 'PRIVATE_KEY',
+    client = new Client(process.env.URL2PNG_APIKEY, process.env.URL2PNG_SECRET,
       viewport: '1024x768'
       unique: 'something'
       say_cheese: true
