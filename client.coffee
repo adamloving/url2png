@@ -1,9 +1,8 @@
-crypto  = require("crypto")
-request = require("http")
+crypto  = require('crypto')
 
 class exports.Client
 
-  @URL_PREFIX = "http://api.url2png.com/v6/"
+  @URL_PREFIX = 'http://api.url2png.com/v6/'
   
   constructor: (@apiKey, @privateKey, @options = {}) ->
     @validateOptions()
@@ -54,9 +53,7 @@ class exports.Client
 
     "#{Client.URL_PREFIX}#{@apiKey}/#{token}/png/?#{queryString}"
   
-  request: (url) ->
-    options = options or {}
-    options.protocol = options.protocol or "https"
-    http.request(@getApiUrl(url))
+
+
   
 
