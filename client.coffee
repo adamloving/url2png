@@ -42,8 +42,6 @@ class exports.Client
 
     queryString = ''
 
-    console.log 'query', query
-
     # this puts keys in alphabetical order
     for key of query
       v = query[key]
